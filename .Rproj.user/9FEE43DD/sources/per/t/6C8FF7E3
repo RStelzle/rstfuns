@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1578868476751.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1068295943",
+    "id" : "6C8FF7E3",
+    "lastKnownWriteTime" : 1578868581,
+    "last_content_update" : 1578868582002,
+    "path" : "C:/Users/Robert/box.fu/EhemDropbox/SonstigesZeugs/mein_r_paket/TestScript.R",
+    "project_path" : null,
+    "properties" : {
+        "cursorPosition" : "30,0",
+        "scrollLine" : "0"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

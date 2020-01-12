@@ -1,0 +1,30 @@
+## Test der Benutzung des Pakets
+
+remove.packages("rstfuns")
+library(devtools)
+
+devtools::install("rstfuns")
+library(rstfuns)
+
+test_attina <- c(15, 2, 5)
+test_attina_shorter <- c(15,2)
+test_attina_longer <- c(15,2,5,6)
+
+
+test_rice <- c(15,2)
+test_rice_shorter <- c(15)
+test_rice_longer <- c(15,2,5)
+
+
+calc_attina_index(test_attina)
+calc_attina_index(test_attina_shorter, rescale = T)
+calc_attina_index(test_attina_longer)
+
+
+
+calc_rice_index(test_rice)
+calc_rice_index(test_rice_shorter)
+calc_rice_index(test_rice_longer)
+
+
+calc_attina_index(c(5,5,5), rescale = T)
