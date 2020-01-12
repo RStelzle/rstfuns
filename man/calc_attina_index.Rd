@@ -9,7 +9,7 @@ calc_attina_index(votecounts, rescale = FALSE)
 \arguments{
 \item{votecounts}{A vector containing the number or share of votes for yes, no and abstain in any given order. If a vector of a shorter length than 3 is given, the count/frequency of the missing vote option(s) is assumed to be 0.}
 
-\item{rescale}{Default: FALSE. If TRUE the result gets rescaled from its former range of -33.333 to 100 to a range of 0 to 1. A value of 0.25 now represents that 50% of the values were casted for one of the options.}
+\item{rescale}{Default: FALSE. If TRUE the result gets rescaled from its former range of -33.333 to 100 to a range of 0 to 1. A value of 0.25 now represents that 50\% of the values were casted for one of the options.}
 }
 \description{
 This function allows you to easily calculate Attina´s Index of Agreement for a given vote.
