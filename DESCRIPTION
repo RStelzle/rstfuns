@@ -3,7 +3,7 @@ Type: Package
 Title: A Collection Of Functions I Wrote For Various Projects Of Mine
 Version: 0.1.0
 Author: Robert Stelzle
-Description: A Collection of Functions I wrote for various Projects of mine. Propably concerning political science.
+Description: A Collection of Functions I wrote for various Projects of mine. Probably concerning political science.
 License: GPL (version 2 or later)
 Encoding: UTF-8
 LazyData: true
