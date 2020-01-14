@@ -17,7 +17,7 @@ library(rstfuns)
 
 Roll-Call-Data is one of the workhorse-data-sources of the sociology of legaslatures, as it is -depending on the legislative body of interest- relatively accessible. One topic of interest to be tackled with Roll-Call-Data might be cohesion or discipline (for a distinction of the two see Özbudun (1970)) of parliamentary groups. For questions of this kind `rstfuns` contains two functions `calc_attina_index()` and `calc_rice_index()`. Both indices can be used to measure cohesion within a set of legislators for a given vote.
 
-That being said, Roll-Call-Data should not be analysed without a word of caution: As roll-call-votes are not staged randomly, any inferences taken from a sample of roll-call-votes on the population of all votes are built on shaky grounds. For a great overview see Carrubba et al. (2006).
+That being said, Roll-Call-Data should not be analysed without a word of caution: As roll-call-votes are in most cases not staged randomly, any inferences taken from a sample of roll-call-votes on the population of all votes are built on shaky grounds. For a great overview see Carrubba et al. (2006).
 
 #### `calc_attina_index()`
 
