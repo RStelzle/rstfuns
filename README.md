@@ -34,7 +34,8 @@ Attina's index of agreement results values from -33.333 to 100. A value of 100 r
 ## Literature:
 
 
-Attina, Fulvio. "The Voting Behaviour of the European Parliament Members and the Problem of the Europarties". European Journal of Political Research 18, Nr. 5 (1990): 557–579. [DOI](https://doi.org/10.1111/j.1475-6765.1990.tb00248.x)
+Attina, Fulvio. "The Voting Behaviour of the European Parliament Members and the Problem of the Europarties". European Journal of Political Research 18, Nr. 5 (1990): 557–579. [DOI](https://doi.org/10.1111/j.1475-6765.1990.tb00248.x).
+
 Carrubba, Clifford J., Matthew Gabel, Lacey Murrah, Ryan Clough, Elizabeth Montgomery and Rebecca Schambach. "Off the Record: Unrecorded Legislative Votes, Selection Bias and Roll-Call Vote Analysis". British Journal of Political Science 36, Nr. 4 (2006): 691–704. [DOI](htpps://doi.org/10.1017/S0007123406000366).
 
 
