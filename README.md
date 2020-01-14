@@ -34,13 +34,13 @@ Attina's index of agreement results values from -33.333 to 100. A value of 100 r
 ## Literature:
 
 
-Attina, Fulvio. "The Voting Behaviour of the European Parliament Members and the Problem of the Europarties". European Journal of Political Research 18, Nr. 5 (1990): 557–579. [DOI: 10.1111/j.1475-6765.1990.tb00248.x ](doi.org/10.1111/j.1475-6765.1990.tb00248.x).
+Attina, Fulvio. "The Voting Behaviour of the European Parliament Members and the Problem of the Europarties". European Journal of Political Research 18, Nr. 5 (1990): 557–579. [doi.org/10.1111/j.1475-6765.1990.tb00248.x].
 
-Carrubba, Clifford J., Matthew Gabel, Lacey Murrah, Ryan Clough, Elizabeth Montgomery and Rebecca Schambach. "Off the Record: Unrecorded Legislative Votes, Selection Bias and Roll-Call Vote Analysis". British Journal of Political Science 36, Nr. 4 (2006): 691–704. [DOI: 10.1017/S0007123406000366](doi.org/10.1017/S0007123406000366).
+Carrubba, Clifford J., Matthew Gabel, Lacey Murrah, Ryan Clough, Elizabeth Montgomery and Rebecca Schambach. "Off the Record: Unrecorded Legislative Votes, Selection Bias and Roll-Call Vote Analysis". British Journal of Political Science 36, Nr. 4 (2006): 691–704. [doi.org/10.1017/S0007123406000366].
 
 
-Hix, Simon, Abdul Noury, und Gérard Roland. "Power to the Parties: Cohesion and Competition in the European Parliament, 1979–2001". British Journal of Political Science 35, Nr. 2 (2005): 209–234. [DOI: 10.1017/S0007123405000128](doi.org/10.1017/S0007123405000128).
+Hix, Simon, Abdul Noury, und Gérard Roland. "Power to the Parties: Cohesion and Competition in the European Parliament, 1979–2001". British Journal of Political Science 35, Nr. 2 (2005): 209–234. [doi.org/10.1017/S0007123405000128].
 
 Özbudun, Ergun. "Party cohesion in western democracies: a causal analysis". Sage professional papers in Comparative politics 1, Nr. 6 (1970): 303–388.
 
-Rice, Stuart A. "The Behavior of Legislative Groups: A Method of Measurement". Political Science Quarterly 40, Nr. 1 (1925): 60–72. [DOI: 10.2307/2142407](doi.org/10.2307/2142407).
+Rice, Stuart A. "The Behavior of Legislative Groups: A Method of Measurement". Political Science Quarterly 40, Nr. 1 (1925): 60–72. [doi.org/10.2307/2142407].
