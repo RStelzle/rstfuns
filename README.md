@@ -1,6 +1,6 @@
 # rstfuns - My personal R-Package
 
-This is my personal R-Package containing various short functions I wrote for various projects, mostly concerning topics of political science.
+This is my personal R-Package containing various short functions I wrote for various projects, mostly concerning topics of political science. My main reasons for writing this package are a) to have written a R package once and b) to have an easy, transparent and reproducible way of reusing code between project. The idea for this small package was born after I read [this](https://hilaryparker.com/2013/04/03/personal-r-packages/) great blog-post by Hilary Parker. [This](https://hilaryparker.com/2014/04/29/writing-an-r-package-from-scratch/) other post of hers was a great help. 
 
 ## Installation:
 
@@ -37,7 +37,6 @@ Attina's index of agreement results values from -33.333 to 100. A value of 100 r
 Attina, Fulvio. "The Voting Behaviour of the European Parliament Members and the Problem of the Europarties". European Journal of Political Research 18, Nr. 5 (1990): 557–579. [DOI](https://doi.org/10.1111/j.1475-6765.1990.tb00248.x).
 
 Carrubba, Clifford J., Matthew Gabel, Lacey Murrah, Ryan Clough, Elizabeth Montgomery and Rebecca Schambach. "Off the Record: Unrecorded Legislative Votes, Selection Bias and Roll-Call Vote Analysis". British Journal of Political Science 36, Nr. 4 (2006): 691–704. [DOI](https://doi.org/10.1017/S0007123406000366).
-
 
 Hix, Simon, Abdul Noury, und Gérard Roland. "Power to the Parties: Cohesion and Competition in the European Parliament, 1979–2001". British Journal of Political Science 35, Nr. 2 (2005): 209–234. [DOI](https://doi.org/10.1017/S0007123405000128).
 
