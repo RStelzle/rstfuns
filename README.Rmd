@@ -1,0 +1,38 @@
+---
+title: "rstfuns - My personal R-Package"
+output: github_document
+bibliography: rstfuns_referenzen.bib
+---
+
+This is my personal R-Package containing various short functions I wrote for various projects, mostly concerning topics of political science. My main reasons for writing this package are a) to have written a R package once and b) to have an easy, transparent and reproducible way of reusing code between project. The idea for this small package was born after I read [this](https://hilaryparker.com/2013/04/03/personal-r-packages/) great blog-post by Hilary Parker. [This](https://hilaryparker.com/2014/04/29/writing-an-r-package-from-scratch/) other post of hers was a great help. 
+
+## Installation:
+
+Installation of `rstfuns` requires `devtools`. If `devtools` is installed `rstfuns` can be installed using:
+
+```
+devtools::install_github("https://github.com/RStelzle/rstfuns", dependencies = T)
+library(rstfuns)
+```
+
+## Available functions:
+
+### Roll-Call-Data:
+
+Roll-Call-Data is one of the workhorse-data-sources of the sociology of legaslatures, as it is -depending on the legislative body of interest- relatively accessible. One topic of interest to be tackled with Roll-Call-Data might be cohesion or discipline (for a distinction of the two see @ozbudunPartyCohesionWestern1970) of parliamentary groups. For questions of this kind `rstfuns` contains two functions `calc_attina_index()` and `calc_rice_index()`. Both indices can be used to measure cohesion within a set of legislators for a given vote.
+
+That being said, Roll-Call-Data should not be analysed without a word of caution: As roll-call-votes are in most cases not staged randomly, any inferences taken from a sample of roll-call-votes on the population of all votes are built on shaky grounds. For a great overview see @carrubbaRecordUnrecordedLegislative2006.
+
+#### `calc_attina_index()`
+
+`calc_attina_index()` is used to calculate "Attina's index of agreement" [see @attinaVotingBehaviourEuropean1990c, pp. 564f.]. Attina's index of agreement can be used for votes with the option to abstain from the vote, like in the European Paraliament. `calc_attina_index()` takes a vector (max. `length()` = 3) of the amount/share of votes for "yes", "no" and "abstain". When the vector is shorter than `length() = 3`  it is assumed that no legislators voted for the missing option(s).
+
+Attina's index of agreement results values from -33.333 to 100. A value of 100 represents a unanimous vote. Positive values result, if more than half of the votes were casted for one and the same option. -33.33 means, that equal shares of legislatures voted for "yes", "no" and "abstain".
+
+`calc_attina_index()` takes the optional argument `rescale` (default = `FALSE`). If set to `TRUE`, `calc_attina_index()`'s results get rescaled to a scale of 0-1 (for exaple used in @hixPowerPartiesCohesion2005). A value of 0.25 now represents that 50% of the values were casted for one of the options.
+
+#### `calc_rice_index()`
+`calc_rice_index()` is used to calculate the "Rice Index" as defined in @riceBehaviorLegislativeGroups1925 [p. 62f.]. It can be used for votes without an option to abstain. Therefore `calc_rice_index()` only takes a vector of max. `length()` = 2. The Rice Index varies between 1 (all votes where casted for the same option) and 0 (votes where evenly split between "yes" and "no").
+
+
+# References
