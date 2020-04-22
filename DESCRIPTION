@@ -7,4 +7,12 @@ Description: A Collection of Functions I wrote for various Projects of mine. Pro
 License: GPL (version 2 or later)
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 7.0.2
+RoxygenNote: 7.1.0
+Imports: 
+    magrittr,
+    dplyr,
+    ggplot2,
+    readr,
+    directlabels,
+    countrycode,
+    ggthemes
