@@ -112,7 +112,7 @@ plot_wbt_parlgov <- function(countryname, german=F) {
     plot <- plot +
       ggplot2::ylab("Wahlbeteiligung")+
       ggplot2::xlab("Jahr")+
-      ggplot2::labs(title = paste("Wahlbeteiligung bei Wahlen zum nationalen Parlament (NP)\n und zum Europaparlement (EP) in",
+      ggplot2::labs(title = paste("Wahlbeteiligung bei Wahlen zum nationalen Parlament (NP)\n und zum Europaparlament (EP) in",
                          laender_string),
            caption="Datenquelle:\nDöring, Holger und Philip Manow. 2019.
        Parliaments and governments database (ParlGov): Information on parties, elections and
