@@ -7,12 +7,12 @@
 #' @export
 #' @examples
 #'
-#' plot_wbt_parlgov("Spain")
+#' plot_turnout_parlgov("Spain")
 #'
-#' plot_wbt_parlgov(c("Poland","Germany"), german=T)
+#' plot_turnout_parlgov(c("Poland","Germany"), german=T)
 
 
-plot_wbt_parlgov <- function(countryname, german=F) {
+plot_turnout_parlgov <- function(countryname, german=F) {
   print(paste("Preparing turnout-plot for", countryname))
 
   ParlGovParties <- readr::read_csv("http://www.parlgov.org/static/data/development-utf-8/view_election.csv")
