@@ -40,6 +40,13 @@ et al. (2006).
 
 #### `calc_attina_index()`
 
+![This is a Picture of the formula used to calculate Attinas Index of
+Agreement](data:image/gif;base64,R0lGODlhuAAnALMAAP///wAAAO7u7nZ2diIiImZmZqqqqkRERIiIiMzMzBAQENzc3JiYmFRUVDIyMrq6uiH5BAEAAAAALAAAAAC4ACcAAAT+EMhJq7046807F4gnSuFonmhqDkSQXE5QPKrVWGywTEIRHLROr0YsGj0IhcFicBSOpGAl+aTcRgYGdMslIhwl3iMgNTowjIGCItCazt24nLN4NKoTQyIggGYvCQkLAUsSDzsrhXOLjABaAwcUCSAEWweIFW4OkSQodo2gcloMlXkAB3hGaxclBnydKKuhs0daY6YASlulFmEBJW4nAbTERAJLg30LL8lQC3AVdRMFa4c8Pn0TY2ETCtnF4FjZLgCFpBoPB+rr7METCdAU7nsP7o4NUgKQFwTf4f8bgil5kK3BlSMCeFHgBoBAA4YMEAQzgIChBFkAM6KZ4GCAIgX+9opgnMAQQQB7DAwMkLBgAZALIzXKBJAgWANogzAdceAPQL0KAshNqJOA05KYAFxm1NeigKIRBV5AYUHADQKpA2JE3YLgKTUCTwGkKtenEo1nFxiEBKcuxZ6wM0csODjCjbcXDMZKONBTxAMHUrVJHFDmweAyE36lMGkxrgi+J0qAkdAA7lwUC64KlQCPI6LOEhzopLm5rgAFKx1j1quhh2gAA3YwQG2hQN8RpQ8oQlBFN8mxJlEcA+CAruoRD+AaYRA4RenND1ZBH9mWyeDmJCnHOy43zmgUm/dg2iNA/LtX3SwWKLEgZiAJBRRSKGCwvv0Gqbkfh67jfJ3+nAH+mFRpjsRDYDDB6adgNARgR0F4Ao6xTIQCMjBMBSDxUFoaA3R4wIVGBCDiiCSWaOKJKKao4oosngiIAog9GNgggbkiAI15oAfATdFUCCIAw2kj4IJEavCcFAZIhyRGtEny42TZUYBjbffdl1+RGuWG4BUHbDkUGRY0KAEDdP3BBiFYpnkBmNpwQhwi6XgGJCQBVBaNR2oN1UAAPGmzpwNrqamfPn8OUGNXhFFAkUoxCjpVC5j08EOjjlbKCBUVGGfppoykgVEbnIbKSCCDKGKNqKh2oYmbjaXqqgqtoNfqq7SO4AswteaKmRTU+PSdrsBmMA8ZgQZr7EIVODTrsccTlnQSs9BW8NOZDkYb7FdhsfZqBAA7)
+
+With *M* being the count of votes given for the option with the most
+votes and *N* being the total count of votes given, including votes to
+abstain.
+
 `calc_attina_index()` is used to calculate “Attina’s index of agreement”
 (see Attina 1990, 564f.). Attina’s index of agreement can be used for
 votes with the option to abstain from the vote, like in the European
@@ -61,6 +68,12 @@ of the options.
 
 #### `calc_rice_index()`
 
+![This is a Picture of the formula used to calculate the Rice
+index](data:image/gif;base64,R0lGODlhZQAnALMAAP///wAAAHZ2diIiImZmZkRERO7u7lRUVDIyMpiYmKqqqszMzNzc3IiIiBAQELq6uiH5BAEAAAAALAAAAABlACcAAAT+EMhJq73Yksy799snjlJhCUNACERRLKRnNIfQNACDA2bsZ71K4UBRBBi/S2LwoKCavKSUEqQEEhTDdTpBGSqPwKTK9ZEBiwBsklaUE8cLYlyWnuEVguM71e5OdHU/ZwdVDw5rUwIBfBxngh9nDgUJCTcCjVMDjxackI4VDAFQnwABApGlJGR4Hw8usLGUFlsXboGqqRQHc7kDqBYJSLi5HWS/xQ29FAy3xMVAzAHOqgjAEg9YQhcoKiwFmKVBAgUBB9SlDSs3w9sXQxQEy4Ke0B6ctRJGiXX19qAW0rQD0IDRJ3//MDxq4CCLA22QECbs9I4IAAMKCpCCxG/ih46tElQoSNAiU54DKFOqvOYxl8AJylrKFMGQQitIAXLq3Mmzp8+fQIP2HGNRgp6ZSDnkAzCgl0kABFRKrZH0Uxh+CEww2FhVJgsCBJwtOFCpq9mzJLq1M0AggEa0SBmGmFAUrswEAhpOMADRrscFC0Q5ezDQb0JtWWEalrnDCJ8/ixP+CbCjb2RoWyccJXz5MIU02TpLrjDgAGTRuU4XtIzaqmUtIFvX0TMA3dw6EQAAOw==)
+
+With *P* being the count of “Yes”-, *C* the count of “No” and *N* the
+total count of votes.
+
 `calc_rice_index()` is used to calculate the “Rice Index” as defined in
 Rice (1925, 62f.). It can be used for votes without an option to
 abstain. Therefore `calc_rice_index()` only takes a vector of max.
@@ -70,7 +83,7 @@ for the same option) and 0 (votes where evenly split between “yes” and
 
 # References
 
-<div id="refs" class="references hanging-indent">
+<div id="refs" class="references">
 
 <div id="ref-attinaVotingBehaviourEuropean1990c">
 

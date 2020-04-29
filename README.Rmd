@@ -4,6 +4,16 @@ output: github_document
 bibliography: rstfuns_referenzen.bib
 ---
 
+```{r message=FALSE, warning=FALSE, include=FALSE}
+latexImg = function(latex){
+    link = paste0('http://latex.codecogs.com/gif.latex?',
+           gsub('\\=','%3D',URLencode(latex)))
+    link = gsub("(%..)","\\U\\1",link,perl=TRUE)
+    return(paste0('![](',link,')'))
+} ## geklaut von https://github.com/STAT545-UBC/Discussion/issues/102#issuecomment-142482040
+```
+
+
 This is my personal R-Package containing various short functions I wrote for various projects, mostly concerning topics of political science. My main reasons for writing this package are a) to have written a R package once and b) to have an easy, transparent and reproducible way of reusing code between project. The idea for this small package was born after I read [this](https://hilaryparker.com/2013/04/03/personal-r-packages/) great blog-post by Hilary Parker. [This](https://hilaryparker.com/2014/04/29/writing-an-r-package-from-scratch/) other post of hers was a great help. 
 
 ## Installation:
@@ -25,6 +35,15 @@ That being said, Roll-Call-Data should not be analysed without a word of caution
 
 #### `calc_attina_index()`
 
+
+![This is a Picture of the formula used to calculate Attinas Index of Agreement](data:image/gif;base64,R0lGODlhuAAnALMAAP///wAAAO7u7nZ2diIiImZmZqqqqkRERIiIiMzMzBAQENzc3JiYmFRUVDIyMrq6uiH5BAEAAAAALAAAAAC4ACcAAAT+EMhJq7046807F4gnSuFonmhqDkSQXE5QPKrVWGywTEIRHLROr0YsGj0IhcFicBSOpGAl+aTcRgYGdMslIhwl3iMgNTowjIGCItCazt24nLN4NKoTQyIggGYvCQkLAUsSDzsrhXOLjABaAwcUCSAEWweIFW4OkSQodo2gcloMlXkAB3hGaxclBnydKKuhs0daY6YASlulFmEBJW4nAbTERAJLg30LL8lQC3AVdRMFa4c8Pn0TY2ETCtnF4FjZLgCFpBoPB+rr7METCdAU7nsP7o4NUgKQFwTf4f8bgil5kK3BlSMCeFHgBoBAA4YMEAQzgIChBFkAM6KZ4GCAIgX+9opgnMAQQQB7DAwMkLBgAZALIzXKBJAgWANogzAdceAPQL0KAshNqJOA05KYAFxm1NeigKIRBV5AYUHADQKpA2JE3YLgKTUCTwGkKtenEo1nFxiEBKcuxZ6wM0csODjCjbcXDMZKONBTxAMHUrVJHFDmweAyE36lMGkxrgi+J0qAkdAA7lwUC64KlQCPI6LOEhzopLm5rgAFKx1j1quhh2gAA3YwQG2hQN8RpQ8oQlBFN8mxJlEcA+CAruoRD+AaYRA4RenND1ZBH9mWyeDmJCnHOy43zmgUm/dg2iNA/LtX3SwWKLEgZiAJBRRSKGCwvv0Gqbkfh67jfJ3+nAH+mFRpjsRDYDDB6adgNARgR0F4Ao6xTIQCMjBMBSDxUFoaA3R4wIVGBCDiiCSWaOKJKKao4oosngiIAog9GNgggbkiAI15oAfATdFUCCIAw2kj4IJEavCcFAZIhyRGtEny42TZUYBjbffdl1+RGuWG4BUHbDkUGRY0KAEDdP3BBiFYpnkBmNpwQhwi6XgGJCQBVBaNR2oN1UAAPGmzpwNrqamfPn8OUGNXhFFAkUoxCjpVC5j08EOjjlbKCBUVGGfppoykgVEbnIbKSCCDKGKNqKh2oYmbjaXqqgqtoNfqq7SO4AswteaKmRTU+PSdrsBmMA8ZgQZr7EIVODTrsccTlnQSs9BW8NOZDkYb7FdhsfZqBAA7)
+
+
+
+With *M* being the count of votes given for the option with the most votes
+and *N* being the total count of votes given, including votes to abstain.
+
+
 `calc_attina_index()` is used to calculate "Attina's index of agreement" [see @attinaVotingBehaviourEuropean1990c, pp. 564f.]. Attina's index of agreement can be used for votes with the option to abstain from the vote, like in the European Paraliament. `calc_attina_index()` takes a vector (max. `length()` = 3) of the amount/share of votes for "yes", "no" and "abstain". When the vector is shorter than `length() = 3`  it is assumed that no legislators voted for the missing option(s).
 
 Attina's index of agreement results values from -33.333 to 100. A value of 100 represents a unanimous vote. Positive values result, if more than half of the votes were casted for one and the same option. -33.33 means, that equal shares of legislatures voted for "yes", "no" and "abstain".
@@ -32,6 +51,12 @@ Attina's index of agreement results values from -33.333 to 100. A value of 100 r
 `calc_attina_index()` takes the optional argument `rescale` (default = `FALSE`). If set to `TRUE`, `calc_attina_index()`'s results get rescaled to a scale of 0-1 (for exaple used in @hixPowerPartiesCohesion2005). A value of 0.25 now represents that 50% of the values were casted for one of the options.
 
 #### `calc_rice_index()`
+
+![This is a Picture of the formula used to calculate the Rice index](data:image/gif;base64,R0lGODlhZQAnALMAAP///wAAAHZ2diIiImZmZkRERO7u7lRUVDIyMpiYmKqqqszMzNzc3IiIiBAQELq6uiH5BAEAAAAALAAAAABlACcAAAT+EMhJq73Yksy799snjlJhCUNACERRLKRnNIfQNACDA2bsZ71K4UBRBBi/S2LwoKCavKSUEqQEEhTDdTpBGSqPwKTK9ZEBiwBsklaUE8cLYlyWnuEVguM71e5OdHU/ZwdVDw5rUwIBfBxngh9nDgUJCTcCjVMDjxackI4VDAFQnwABApGlJGR4Hw8usLGUFlsXboGqqRQHc7kDqBYJSLi5HWS/xQ29FAy3xMVAzAHOqgjAEg9YQhcoKiwFmKVBAgUBB9SlDSs3w9sXQxQEy4Ke0B6ctRJGiXX19qAW0rQD0IDRJ3//MDxq4CCLA22QECbs9I4IAAMKCpCCxG/ih46tElQoSNAiU54DKFOqvOYxl8AJylrKFMGQQitIAXLq3Mmzp8+fQIP2HGNRgp6ZSDnkAzCgl0kABFRKrZH0Uxh+CEww2FhVJgsCBJwtOFCpq9mzJLq1M0AggEa0SBmGmFAUrswEAhpOMADRrscFC0Q5ezDQb0JtWWEalrnDCJ8/ixP+CbCjb2RoWyccJXz5MIU02TpLrjDgAGTRuU4XtIzaqmUtIFvX0TMA3dw6EQAAOw==)
+
+
+With *P* being the count of "Yes"-, *C* the count of "No" and *N* the total count of votes.
+
 `calc_rice_index()` is used to calculate the "Rice Index" as defined in @riceBehaviorLegislativeGroups1925 [p. 62f.]. It can be used for votes without an option to abstain. Therefore `calc_rice_index()` only takes a vector of max. `length()` = 2. The Rice Index varies between 1 (all votes where casted for the same option) and 0 (votes where evenly split between "yes" and "no").
 
 
