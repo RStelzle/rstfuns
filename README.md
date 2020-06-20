@@ -89,12 +89,6 @@ for the same option) and 0 (votes where evenly split between “yes” and
 rstfuns::plot_turnout_parlgov(c("Germany", "Poland", "France", "United Kingdom"), german = F)
 ```
 
-    ## [1] "Preparing turnout-plot for Germany"       
-    ## [2] "Preparing turnout-plot for Poland"        
-    ## [3] "Preparing turnout-plot for France"        
-    ## [4] "Preparing turnout-plot for United Kingdom"
-    ## [1] "Germany, Poland, France and United Kingdom"
-
 ![](README_files/figure-gfm/unnamed-chunk-1-1.png)<!-- -->
 
 `plot_turnout_parlgov()` can be used for quick and dirty plotting of

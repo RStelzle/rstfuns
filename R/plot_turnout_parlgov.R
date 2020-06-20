@@ -13,10 +13,10 @@
 
 
 plot_turnout_parlgov <- function(countryname, german=F) {
-  print(paste("Preparing turnout-plot for", countryname))
 
-  ParlGovParties <- readr::read_csv("http://www.parlgov.org/static/data/development-utf-8/view_election.csv")
-  ParlGovElections <- readr::read_csv("http://www.parlgov.org/static/data/development-utf-8/viewcalc_election_parameter.csv")
+
+  ParlGovParties <- readr::read_csv("http://www.parlgov.org/static/data/development-utf-8/view_election.csv", col_types = readr::cols())
+  ParlGovElections <- readr::read_csv("http://www.parlgov.org/static/data/development-utf-8/viewcalc_election_parameter.csv", col_types = readr::cols())
 
 
   df_election_dates <- ParlGovParties %>%
@@ -75,10 +75,6 @@ plot_turnout_parlgov <- function(countryname, german=F) {
     } else {laender_string <- countryname}
 
   }
-
-
-
-  print(laender_string)
 
 
 
