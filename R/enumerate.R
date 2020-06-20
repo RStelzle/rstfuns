@@ -1,4 +1,4 @@
-#' Calculating the Rice Index
+#' Enumerate contents of a vector to a single string
 #'
 #' This function allows you to easily enumerate content of a vector to one long string, including an "and" at the end.
 #' @param itemsvector Your vector to be enumerated.

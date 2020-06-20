@@ -2,7 +2,7 @@
 % Please edit documentation in R/enumerate.R
 \name{enumerate}
 \alias{enumerate}
-\title{Calculating the Rice Index}
+\title{Enumerate contents of a vector to a single string}
 \usage{
 enumerate(itemvector, german = F, oxford = F)
 }
