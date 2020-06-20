@@ -4,13 +4,8 @@ output: github_document
 bibliography: rstfuns_referenzen.bib
 ---
 
-```{r message=FALSE, warning=FALSE, include=FALSE}
-latexImg = function(latex){
-    link = paste0('http://latex.codecogs.com/gif.latex?',
-           gsub('\\=','%3D',URLencode(latex)))
-    link = gsub("(%..)","\\U\\1",link,perl=TRUE)
-    return(paste0('![](',link,')'))
-} ## geklaut von https://github.com/STAT545-UBC/Discussion/issues/102#issuecomment-142482040
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(dpi=300,fig.width = 11)
 ```
 
 
@@ -36,7 +31,7 @@ That being said, Roll-Call-Data should not be analysed without a word of caution
 #### `calc_attina_index()`
 
 
-![This is a Picture of the formula used to calculate Attinas Index of Agreement](img/attina_formula.gif)
+![This is a Picture of the formula used to calculate Attinas Index of Agreement](README_files/img/attina_formula.gif)
 
 
 
@@ -52,12 +47,35 @@ Attina's index of agreement results values from -33.333 to 100. A value of 100 r
 
 #### `calc_rice_index()`
 
-![This is a Picture of the formula used to calculate the Rice index](img/rice_formula.gif)
+![This is a Picture of the formula used to calculate the Rice index](README_files/img/rice_formula.gif)
 
 
 With *P* being the count of "Yes"-, *C* the count of "No" and *N* the total count of votes.
 
 `calc_rice_index()` is used to calculate the "Rice Index" as defined in @riceBehaviorLegislativeGroups1925 [p. 62f.]. It can be used for votes without an option to abstain. Therefore `calc_rice_index()` only takes a vector of max. `length()` = 2. The Rice Index varies between 1 (all votes where casted for the same option) and 0 (votes where evenly split between "yes" and "no").
+
+
+### Utility stuff
+
+#### `plot_turnout_parlgov()`
+
+```{r fig.height=7, message=FALSE, warning=FALSE}
+rstfuns::plot_turnout_parlgov(c("Germany", "Poland", "France", "United Kingdom"), german = F)
+```
+
+
+
+`plot_turnout_parlgov()` can be used for quick and dirty plotting of election turnout in countries. Data from the ParlGov Database [@doringParliamentsGovernmentsDatabase2019] is used. The function takes one optional argument. If set to `german = T` countrynames will be translated to German and "and" will be replaced by "und".
+
+
+
+
+
+
+
+
+
+
 
 
 # References

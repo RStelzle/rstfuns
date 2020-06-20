@@ -41,7 +41,7 @@ et al. (2006).
 #### `calc_attina_index()`
 
 ![This is a Picture of the formula used to calculate Attinas Index of
-Agreement](img/attina_formula.gif)
+Agreement](README_files/img/attina_formula.gif)
 
 With *M* being the count of votes given for the option with the most
 votes and *N* being the total count of votes given, including votes to
@@ -69,7 +69,7 @@ of the options.
 #### `calc_rice_index()`
 
 ![This is a Picture of the formula used to calculate the Rice
-index](img/rice_formula.gif)
+index](README_files/img/rice_formula.gif)
 
 With *P* being the count of “Yes”-, *C* the count of “No” and *N* the
 total count of votes.
@@ -81,6 +81,28 @@ abstain. Therefore `calc_rice_index()` only takes a vector of max.
 for the same option) and 0 (votes where evenly split between “yes” and
 “no”).
 
+### Utility stuff
+
+#### `plot_turnout_parlgov()`
+
+``` r
+rstfuns::plot_turnout_parlgov(c("Germany", "Poland", "France", "United Kingdom"), german = F)
+```
+
+    ## [1] "Preparing turnout-plot for Germany"       
+    ## [2] "Preparing turnout-plot for Poland"        
+    ## [3] "Preparing turnout-plot for France"        
+    ## [4] "Preparing turnout-plot for United Kingdom"
+    ## [1] "Germany, Poland, France and United Kingdom"
+
+![](README_files/figure-gfm/unnamed-chunk-1-1.png)<!-- -->
+
+`plot_turnout_parlgov()` can be used for quick and dirty plotting of
+election turnout in countries. Data from the ParlGov Database (Döring
+and Manow 2019) is used. The function takes one optional argument. If
+set to `german = T` countrynames will be translated to German and “and”
+will be replaced by “und”.
+
 # References
 
 <div id="refs" class="references">
@@ -88,9 +110,8 @@ for the same option) and 0 (votes where evenly split between “yes” and
 <div id="ref-attinaVotingBehaviourEuropean1990c">
 
 Attina, Fulvio. 1990. “The Voting Behaviour of the European Parliament
-Members and the Problem of the Europarties.” *European Journal of
-Political Research* 18 (5): 557–79.
-<https://doi.org/10.1111/j.1475-6765.1990.tb00248.x>.
+Members and the Problem of the Europarties.” *Eur J Political Res* 18
+(5): 557–79. <https://doi.org/10.1111/j.1475-6765.1990.tb00248.x>.
 
 </div>
 
@@ -99,8 +120,16 @@ Political Research* 18 (5): 557–79.
 Carrubba, Clifford J., Matthew Gabel, Lacey Murrah, Ryan Clough,
 Elizabeth Montgomery, and Rebecca Schambach. 2006. “Off the Record:
 Unrecorded Legislative Votes, Selection Bias and Roll-Call Vote
-Analysis.” *British Journal of Political Science* 36 (4): 691–704.
+Analysis.” *Brit. J. Polit. Sci.* 36 (4): 691–704.
 <https://doi.org/10.1017/S0007123406000366>.
+
+</div>
+
+<div id="ref-doringParliamentsGovernmentsDatabase2019">
+
+Döring, Holger, and Philip Manow. 2019. “Parliaments and Governments
+Database (ParlGov): Information on Parties, Elections and Cabinets in
+Modern Democracies. Development Version.” http://www.parlgov.org/.
 
 </div>
 
