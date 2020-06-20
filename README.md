@@ -97,6 +97,20 @@ and Manow 2019) is used. The function takes one optional argument. If
 set to `german = T` countrynames will be translated to German and “and”
 will be replaced by “und”.
 
+#### `enumerate()`
+
+`enumerate()` can be used to print all entries of a vector to one large
+string enumerating all entries and adding “and” before the last entry.
+The optional argument `german = T` changes “and” to “und”. The optional
+argument `oxford = T` adds an additional (oxford-) comma before the
+“and”.
+
+``` r
+rstfuns::enumerate(c("Germany", "Italy", "Poland"))
+```
+
+    ## [1] "Germany, Italy and Poland"
+
 # References
 
 <div id="refs" class="references">
