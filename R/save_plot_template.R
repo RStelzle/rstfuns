@@ -26,7 +26,7 @@ save_plot_template <- function(plot_object = ggplot2::last_plot(), filenames, pd
 
   tmptbbl <-c("\\begin{figure}[!t]",
               "\\centering",
-              paste0("\\includegraphics[width=", latexwidth, "]{../output/figures/", filenames, ".pdf}"),
+              paste0("\\includegraphics[width=", latexwidth, "\\linewidth]{../output/figures/", filenames, ".pdf}"),
               paste0("\\caption{", latexcaption, "\\label{", latexlabel, "}}"),
               "\\end{figure}"
   )
